@@ -112,6 +112,7 @@ header a:hover {
 }
 .wp-block-image img {
     max-width: 700px;
+    height: auto;
     
 }
 #modal{
