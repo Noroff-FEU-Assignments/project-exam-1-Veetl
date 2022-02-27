@@ -18,7 +18,7 @@ async function getInfo() {
             if (i === 10) {
                 break;
             }
-            resultsContainer.innerHTML += `<a href="Blogs.html?id=${info[i].id}" class="contentcenter">${info[i].title.rendered}</a><br>`
+            resultsContainer.innerHTML += `<a href="Blogs.html?id=${info[i].id}" class="contentcenter"><h3>${info[i].title.rendered}</h3></a>`
            }
     } catch (error) {
     resultsContainer.innerHTML = displayError("An error occurred when calling the API")

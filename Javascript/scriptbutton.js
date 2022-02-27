@@ -1,11 +1,5 @@
 const url = "https://veetl.skadbergworks.com/wp/wp-json/wp/v2/posts?per_page=12";
 
-var radio1 = document.getElementById("page1");
-var radio2 = document.getElementById("page2");
-var radio3 = document.getElementById("page3");
-var box1 = document.getElementById("box1");
-var box2 = document.getElementById("box2");
-var box3 = document.getElementById("box3");
 
 const resultsContainer = document.querySelector("#box1 .carousel")
 const resultsContainer2 = document.querySelector("#box2 .carousel")
@@ -24,6 +18,13 @@ const resultsContainer13 = document.querySelector("#box13 .minicarousel")
 const resultsContainer14 = document.querySelector("#box14 .minicarousel")
 const resultsContainer15 = document.querySelector("#box15 .minicarousel")
 
+const resultsContainer16 = document.querySelector("#box16 .mediumcarousel")
+const resultsContainer17 = document.querySelector("#box17 .mediumcarousel")
+const resultsContainer18 = document.querySelector("#box18 .mediumcarousel")
+const resultsContainer19 = document.querySelector("#box19 .mediumcarousel")
+const resultsContainer20 = document.querySelector("#box20 .mediumcarousel")
+const resultsContainer21 = document.querySelector("#box21 .mediumcarousel")
+
 
 
 async function getInfo() {
@@ -35,44 +36,79 @@ async function getInfo() {
 
     const info = object;
  
-
-
     for(let i = 0; i < info.length; i++) {
         if (i === 4) {
             break;
         }
-        resultsContainer.innerHTML += `<a href="Blogs.html?id=${info[i].id}" class="box"> <div>${info[i].title.rendered}<br> ${info[i].excerpt.rendered} </div></a>`
-                               
+        resultsContainer.innerHTML += `<a href="Blogs.html?id=${info[i].id}" class="box"> <div><h3>${info[i].title.rendered}</h3> ${info[i].excerpt.rendered} </div></a>`                         
     }
-    
     for(let i = 4; i < info.length; i++) {
         if (i === 8) {
             break;
         }
-        resultsContainer2.innerHTML += `<a href="Blogs.html?id=${info[i].id}" class="box"> <div>${info[i].title.rendered}<br> ${info[i].excerpt.rendered} </div></a>`
+        resultsContainer2.innerHTML += `<a href="Blogs.html?id=${info[i].id}" class="box"> <div><h3>${info[i].title.rendered}</h3> ${info[i].excerpt.rendered} </div></a>`
     }
-
     for(let i = 8; i < info.length; i++) {
         if (i === 12) {
             break;
         }
-        resultsContainer3.innerHTML += `<a href="Blogs.html?id=${info[i].id}" class="box"> <div>${info[i].title.rendered}<br> ${info[i].excerpt.rendered} </div></a>`
+        resultsContainer3.innerHTML += `<a href="Blogs.html?id=${info[i].id}" class="box"> <div><h3>${info[i].title.rendered}</h3> ${info[i].excerpt.rendered} </div></a>`
     }
 
+
+
+
+
+    for(let i = 0; i < info.length; i++) {
+        if (i === 2) {
+            break;
+        }
+        resultsContainer16.innerHTML += `<a href="Blogs.html?id=${info[i].id}" class="box"> <div><h3>${info[i].title.rendered}</h3> ${info[i].excerpt.rendered} </div></a>`                        
+    }
+    for(let i = 2; i < info.length; i++) {
+        if (i === 4) {
+            break;
+        }
+        resultsContainer17.innerHTML += `<a href="Blogs.html?id=${info[i].id}" class="box"> <div><h3>${info[i].title.rendered}</h3> ${info[i].excerpt.rendered} </div></a>`                      
+    }
+    for(let i = 4; i < info.length; i++) {
+        if (i === 6) {
+            break;
+        }
+        resultsContainer18.innerHTML += `<a href="Blogs.html?id=${info[i].id}" class="box"> <div><h3>${info[i].title.rendered}</h3> ${info[i].excerpt.rendered} </div></a>`                      
+    }
+    for(let i = 6; i < info.length; i++) {
+        if (i === 8) {
+            break;
+        }
+        resultsContainer19.innerHTML += `<a href="Blogs.html?id=${info[i].id}" class="box"> <div><h3>${info[i].title.rendered}</h3> ${info[i].excerpt.rendered} </div></a>`                       
+    }
+    for(let i = 8; i < info.length; i++) {
+        if (i === 10) {
+            break;
+        }
+        resultsContainer20.innerHTML += `<a href="Blogs.html?id=${info[i].id}" class="box"> <div><h3>${info[i].title.rendered}</h3> ${info[i].excerpt.rendered} </div></a>`                       
+    }
+    for(let i = 10; i < info.length; i++) {
+        if (i === 12) {
+            break;
+        }
+        resultsContainer21.innerHTML += `<a href="Blogs.html?id=${info[i].id}" class="box"> <div><h3>${info[i].title.rendered}</h3> ${info[i].excerpt.rendered} </div></a>`                      
+    }
     
     
-    resultsContainer4.innerHTML += `<a href="Blogs.html?id=${info[0].id}" class="box"> <div>${info[0].title.rendered}<br> ${info[0].excerpt.rendered} </div></a>`
-    resultsContainer5.innerHTML += `<a href="Blogs.html?id=${info[1].id}" class="box"> <div>${info[1].title.rendered}<br> ${info[1].excerpt.rendered} </div></a>`                       
-    resultsContainer6.innerHTML += `<a href="Blogs.html?id=${info[2].id}" class="box"> <div>${info[2].title.rendered}<br> ${info[2].excerpt.rendered} </div></a>`
-    resultsContainer7.innerHTML += `<a href="Blogs.html?id=${info[3].id}" class="box"> <div>${info[3].title.rendered}<br> ${info[3].excerpt.rendered} </div></a>`
-    resultsContainer8.innerHTML += `<a href="Blogs.html?id=${info[4].id}" class="box"> <div>${info[4].title.rendered}<br> ${info[4].excerpt.rendered} </div></a>`
-    resultsContainer9.innerHTML += `<a href="Blogs.html?id=${info[5].id}" class="box"> <div>${info[5].title.rendered}<br> ${info[5].excerpt.rendered} </div></a>`
-    resultsContainer10.innerHTML += `<a href="Blogs.html?id=${info[6].id}" class="box"> <div>${info[6].title.rendered}<br> ${info[6].excerpt.rendered} </div></a>`
-    resultsContainer11.innerHTML += `<a href="Blogs.html?id=${info[7].id}" class="box"> <div>${info[7].title.rendered}<br> ${info[7].excerpt.rendered} </div></a>`
-    resultsContainer12.innerHTML += `<a href="Blogs.html?id=${info[8].id}" class="box"> <div>${info[8].title.rendered}<br> ${info[8].excerpt.rendered} </div></a>`
-    resultsContainer13.innerHTML += `<a href="Blogs.html?id=${info[9].id}" class="box"> <div>${info[9].title.rendered}<br> ${info[9].excerpt.rendered} </div></a>`
-    resultsContainer14.innerHTML += `<a href="Blogs.html?id=${info[10].id}" class="box"> <div>${info[10].title.rendered}<br> ${info[10].excerpt.rendered} </div></a>`
-    resultsContainer15.innerHTML += `<a href="Blogs.html?id=${info[11].id}" class="box"> <div >${info[11].title.rendered}<br> ${info[11].excerpt.rendered} </div></a>`
+    resultsContainer4.innerHTML += `<a href="Blogs.html?id=${info[0].id}" class="box"> <div><h3>${info[0].title.rendered}</h3> ${info[0].excerpt.rendered} </div></a>`
+    resultsContainer5.innerHTML += `<a href="Blogs.html?id=${info[1].id}" class="box"> <div><h3>${info[1].title.rendered}</h3> ${info[1].excerpt.rendered} </div></a>`                       
+    resultsContainer6.innerHTML += `<a href="Blogs.html?id=${info[2].id}" class="box"> <div><h3>${info[2].title.rendered}</h3> ${info[2].excerpt.rendered} </div></a>`
+    resultsContainer7.innerHTML += `<a href="Blogs.html?id=${info[3].id}" class="box"> <div><h3>${info[3].title.rendered}</h3> ${info[3].excerpt.rendered} </div></a>`
+    resultsContainer8.innerHTML += `<a href="Blogs.html?id=${info[4].id}" class="box"> <div><h3>${info[4].title.rendered}</h3> ${info[4].excerpt.rendered} </div></a>`
+    resultsContainer9.innerHTML += `<a href="Blogs.html?id=${info[5].id}" class="box"> <div><h3>${info[5].title.rendered}</h3> ${info[5].excerpt.rendered} </div></a>`
+    resultsContainer10.innerHTML += `<a href="Blogs.html?id=${info[6].id}" class="box"> <div><h3>${info[6].title.rendered}</h3> ${info[6].excerpt.rendered} </div></a>`
+    resultsContainer11.innerHTML += `<a href="Blogs.html?id=${info[7].id}" class="box"> <div><h3>${info[7].title.rendered}</h3> ${info[7].excerpt.rendered} </div></a>`
+    resultsContainer12.innerHTML += `<a href="Blogs.html?id=${info[8].id}" class="box"> <div><h3>${info[8].title.rendered}</h3> ${info[8].excerpt.rendered} </div></a>`
+    resultsContainer13.innerHTML += `<a href="Blogs.html?id=${info[9].id}" class="box"> <div><h3>${info[9].title.rendered}</h3> ${info[9].excerpt.rendered} </div></a>`
+    resultsContainer14.innerHTML += `<a href="Blogs.html?id=${info[10].id}" class="box"> <div><h3>${info[10].title.rendered}</h3> ${info[10].excerpt.rendered} </div></a>`
+    resultsContainer15.innerHTML += `<a href="Blogs.html?id=${info[11].id}" class="box"> <div><h3>${info[11].title.rendered}</h3> ${info[11].excerpt.rendered} </div></a>`
 
 };
 
@@ -113,6 +149,67 @@ function goRight() {
     }
     if (tab == 3) {
         box3.style.display = "block";
+    }
+};
+var mediumtab = 1
+function mediumLeft() {
+    if (mediumtab <= 1) { return; }
+    
+    mediumtab = mediumtab - 1
+    console.log(mediumtab)
+    box16.style.display = "none";
+    box17.style.display = "none";
+    box18.style.display = "none";
+    box19.style.display = "none";
+    box20.style.display = "none";
+    box21.style.display = "none";
+    if (mediumtab == 1) {
+        box16.style.display = "block";
+    }
+    if (mediumtab == 2) {
+        box17.style.display = "block";
+    }
+    if (mediumtab == 3) {
+        box18.style.display = "block";
+    }
+    if (mediumtab == 4) {
+        box19.style.display = "block";
+    }
+    if (mediumtab == 5) {
+        box20.style.display = "block";
+    }
+    if (mediumtab == 6) {
+        box21.style.display = "block";
+    }
+};
+function mediumRight() {   
+    if (mediumtab >= 6) { return; }
+    
+    mediumtab = mediumtab + 1
+    console.log(mediumtab)
+    box16.style.display = "none";
+    box17.style.display = "none";
+    box18.style.display = "none";
+    box19.style.display = "none";
+    box20.style.display = "none";
+    box21.style.display = "none";
+    if (mediumtab == 1) {
+        box16.style.display = "block";
+    }
+    if (mediumtab == 2) {
+        box17.style.display = "block";
+    }
+    if (mediumtab == 3) {
+        box18.style.display = "block";
+    }
+    if (mediumtab == 4) {
+        box19.style.display = "block";
+    }
+    if (mediumtab == 5) {
+        box20.style.display = "block";
+    }
+    if (mediumtab == 6) {
+        box21.style.display = "block";
     }
 };
 
