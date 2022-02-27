@@ -27,8 +27,9 @@
         <input type="checkbox" id="hamburger-menu"/>
         <div class="flex">
             <a href="/index.html" id="Blog-name">Vetle's Blog</a>
-
+            
             <a class="headertext" href="/index.html">Home</a>
+            <a class="headertext" href="/About.html">About</a>
             <a class="headertext" href="/Blog_list.html">Blog List</a>
             <a class="headertext" href="/Contact_page.html">Contact Us</a>
             
@@ -38,22 +39,23 @@
         </div>
         <nav>
             <a class="buttontextstyle" href="/index.html">Home</a>
+            <a class="buttontextstyle" href="/About.html">About</a>
             <a class="buttontextstyle" href="/Blog_list.html">Blog List</a>
             <a class="buttontextstyle" href="/Contact_page.html">Contact Us</a>
         </nav>
     </header>
     
     <form>
-        <input type="text" oninput="validName()" class="username" placeholder="Enter Username" />
+        <input type="text" oninput="validName()" class="username blockcenter" placeholder="Enter Username" />
         <div class="error1">You need atleast 5 characters</div>
         <br>
-        <input type="text" oninput="validEmail()" class="email" placeholder="Enter Email" />
+        <input type="text" oninput="validEmail()" class="email blockcenter" placeholder="Enter Email" />
         <div class="error2">You need a valid email adress</div>
         <br>
-        <input type="text"  oninput="validSubject()" class="subject" placeholder="Enter Subject" />
+        <input type="text"  oninput="validSubject()" class="subject blockcenter" placeholder="Enter Subject" />
         <div class="error3">You need atleast 15 characters</div>
         <br>
-        <textarea type="text" oninput="validContent()" class="content" placeholder="Enter Content" rows="4" cols="50"></textarea>
+        <textarea type="text" oninput="validContent()" class="content blockcenter" placeholder="Enter Content" rows="4" cols="50"></textarea>
         <div class="error4">You need atleast 25 characters</div>
     </form>
 </body>
