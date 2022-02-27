@@ -155,6 +155,7 @@ header a:hover {
 .error1, .error2, .error3, .error4{
     display:none;
     text-align: center;
+    color:#cc5f5f
 }
 .parent3{
     display:block;
